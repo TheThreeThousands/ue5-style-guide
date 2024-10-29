@@ -235,7 +235,7 @@ Keeping the pattern `Prefix_BaseAssetName_Variant_Suffix` in mind and using comm
 
 For unique and specific variations of assets, `Variant` is either a short and easily recognizable name that represents logical grouping of assets that are a subset of an asset's base name. For example, if Bob had multiple skins these skins should still use `Bob` as the `BaseAssetName` but include a recognizable `Variant`. An 'Evil' skin would be referred to as `Bob_Evil` and a 'Retro' skin would be referred to as `Bob_Retro`.
 
-For unique but generic variations of assets, `Variant` is a lowercase letter starting at `a`. For example, if you have an environment artist generating nondescript rocks, they would be named `Rock_a`, `Rock_b`, `Rock_c`, etc. Except for rare exceptions, you should never require a two character variant letter (`aa`). If you have that many assets, you should consider organizing them with different base names or using multiple variant names.
+For unique but generic variations of assets, `Variant` is a _**lowercase**_ letter starting at `a`. For example, if you have an environment artist generating nondescript rocks, they would be named `Rock_a`, `Rock_b`, `Rock_c`, etc. Except for rare exceptions, you should never require a two character variant letter (`aa`). If you have that many assets, you should consider organizing them with different base names or using multiple variant names.
 
 Depending on how your asset variants are made, you can chain together variant names. For example, if you are creating flooring assets for an Arch Viz project you should use the base name `Flooring` with chained variants such as `Flooring_Marble_a`, `Flooring_Maple_a`, `Flooring_Tile_Squares_a`.
 
