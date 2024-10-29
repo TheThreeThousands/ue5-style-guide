@@ -235,9 +235,9 @@ Keeping the pattern `Prefix_BaseAssetName_Variant_Suffix` in mind and using comm
 
 For unique and specific variations of assets, `Variant` is either a short and easily recognizable name that represents logical grouping of assets that are a subset of an asset's base name. For example, if Bob had multiple skins these skins should still use `Bob` as the `BaseAssetName` but include a recognizable `Variant`. An 'Evil' skin would be referred to as `Bob_Evil` and a 'Retro' skin would be referred to as `Bob_Retro`.
 
-For unique but generic variations of assets, `Variant` is a two digit number starting at `01`. For example, if you have an environment artist generating nondescript rocks, they would be named `Rock_01`, `Rock_02`, `Rock_03`, etc. Except for rare exceptions, you should never require a three digit variant number. If you have more than 100 assets, you should consider organizing them with different base names or using multiple variant names.
+For unique but generic variations of assets, `Variant` is a lowercase letter starting at `a`. For example, if you have an environment artist generating nondescript rocks, they would be named `Rock_a`, `Rock_b`, `Rock_c`, etc. Except for rare exceptions, you should never require a two character variant letter (`aa`). If you have that many assets, you should consider organizing them with different base names or using multiple variant names.
 
-Depending on how your asset variants are made, you can chain together variant names. For example, if you are creating flooring assets for an Arch Viz project you should use the base name `Flooring` with chained variants such as `Flooring_Marble_01`, `Flooring_Maple_01`, `Flooring_Tile_Squares_01`.
+Depending on how your asset variants are made, you can chain together variant names. For example, if you are creating flooring assets for an Arch Viz project you should use the base name `Flooring` with chained variants such as `Flooring_Marble_a`, `Flooring_Maple_a`, `Flooring_Tile_Squares_a`.
 
 <a name="1.1-examples"></a>
 #### 1.1 Examples
@@ -256,9 +256,11 @@ Depending on how your asset variants are made, you can chain together variant na
 
 | Asset Type              | Asset Name                                                 |
 | ----------------------- | ---------------------------------------------------------- |
-| Static Mesh (01)        | SM_Rock_01                                                  |
-| Static Mesh (02)        | SM_Rock_02                                                  |
-| Static Mesh (03)        | SM_Rock_03                                                  |
+| Static Mesh (01)        | SM_Rock_a                                                  |
+| Static Mesh (02)        | SM_Rock_b                                                  |
+| Static Mesh (03)        | SM_Rock_c                                                  |
+| Texture (Diffuse/Albedo)| T_Rock_a_D                                                 |
+| Texture (Normal)        | T_Rock_a_N                                                 |
 | Material                | M_Rock                                                     |
 | Material Instance (Snow)| MI_Rock_Snow                                               |
 
