@@ -11,7 +11,7 @@ Originally forked from https://github.com/Allar/ue5-style-guide and edited to re
     - [Property](#terms-property)
     - [Variable](#terms-variable)
 - [0. Principles](#0)
-  - [0.2 All structure, assets, and code in any Unreal Engine 5 project should look like a single person created it, no matter how many people contributed](#0.1)
+  - [0.1 All structure, assets, and code in any Unreal Engine 5 project should look like a single person created it, no matter how many people contributed](#0.1)
   - [0.2 Friends do not let friends have bad style](#0.2)
   - [0.3 Unlicensed content](#0.3)
 - [00. Globally Enforced Opinions](#00)
