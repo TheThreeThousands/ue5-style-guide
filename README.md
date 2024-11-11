@@ -46,7 +46,7 @@ Originally forked from https://github.com/Allar/ue5-style-guide and edited to re
       - [2.2.2e1 Master Material Example](#2.2.2e1)
     - [2.2.3 Samples, Templates, and Marketplace Content Are Risk-Free](#2.2.3)
     - [2.2.4 DLC, Sub-Projects, and Patches Are Easily Maintained](#2.2.4)
-  - [2.3 Use Developers Folder For Local Testing](#structure-developers)
+  - [2.3 Prototype Folder](#structure-prototype)
   - [2.4 All Map<sup>*</sup> Files Belong In A Folder Called Maps](#structure-maps)
   - [2.5 Use A `Core` Folder For Critical Blueprints And Other Assets](#structure-core)
   - [2.6 Do Not Create Folders Called `Assets` or `AssetTypes`](#structure-assettypes)
@@ -631,14 +631,15 @@ When adhering to [2.2](#2.2), the worst marketplace conflict you can have is if 
 If your project plans to release DLC or has multiple sub-projects associated with it that may either be migrated out or simply not cooked in a build, assets relating to these projects should have their own separate top level content folder. This make cooking DLC separate from main project content far easier. Sub-projects can also be migrated in and out with minimal effort. If you need to change a material of an asset or add some very specific asset override behavior in a patch, you can easily put these changes in a patch folder and work safely without the chance of breaking the core project.
 
 <a name="2.3"></a>
-<a name="structure-developers"></a>
-### 2.3 Use Developers Folder For Local Testing
+<a name="structure-prototype"></a>
+### 2.3 Prototype Folder
 
-During a project's development, it is very common for team members to have a sort of 'sandbox' where they can experiment freely without risking the core project. Because this work may be ongoing, these team members may wish to put their assets on a project's source control server. Not all teams require use of Developer folders, but ones that do use them often run into a common problem with assets submitted to source control.
+During a project's development, while prototyping and greyboxing new maps, team members can use the UE modeling tools to generate assets for levels.
+These generated assets should be placed in the Prototype folder (Content/Prototype instead of Content/ProjectName).
 
-It is very easy for a team member to accidentally use assets that are not ready for use, which will cause issues once those assets are removed. For example, an artist may be iterating on a modular set of static meshes and still working on getting their sizing and grid snapping correct. If a world builder sees these assets in the main project folder, they might use them all over a level not knowing they could be subject to incredible change and/or removal. This causes massive amounts of re-working for everyone on the team to resolve.
+The project folder shouldn't contain assets ultimately intended to never ship. It is very easy for a team member to accidentally use assets that are not ready for use, which will cause issues once those assets are removed. For example, an artist may be iterating on a modular set of static meshes and still working on getting their sizing and grid snapping correct. If a world builder sees these assets in the main project folder, they might use them all over a level not knowing they could be subject to incredible change and/or removal. This causes massive amounts of re-working for everyone on the team to resolve.
 
-If these modular assets were placed in a Developer folder, the world builder should never have had a reason to use them and the whole issue would never happen. The Content Browser has specific View Options that will hide Developer folders (they are hidden by default) making it impossible to accidentally use Developer assets under normal use.
+If these modular assets were placed in a Prototype folder, the world builder should never have had a reason to use them and the whole issue would never happen.
 
 Once the assets are ready for use, an artist simply has to move the assets into the project specific folder and fix up redirectors. This is essentially 'promoting' the assets from experimental to production.
 
