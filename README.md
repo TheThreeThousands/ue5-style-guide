@@ -71,6 +71,7 @@ Originally forked from https://github.com/Allar/ue5-style-guide and edited to re
       - [3.2.1.6 Do _Not_ Include Atomic Type Names](#bp-vars-naming-atomic)
       - [3.2.1.7 Do Include Non-Atomic Type Names](#bp-vars-naming-complex)
       - [3.2.1.8 Arrays](#bp-vars-naming-arrays)
+      - [3.2.1.9 UI elements in WBP hierarchy](#bp-vars-ui)
     - [3.2.2 Editable Variables](#bp-vars-editable)
       - [3.2.2.1 Tooltips](#bp-vars-editable-tooltips)
       - [3.2.2.2 Slider And Value Ranges](#bp-vars-editable-ranges)
@@ -890,6 +891,16 @@ Example: If a `BP_Turret` has the ability to target a `BP_PlayerCharacter`, it s
 Arrays follow the same naming rules as above, but should be named as a plural noun.
 
 Example: Use `Targets`, `Hats`, and `EnemyPlayers`, **not** `TargetList`, `HatArray`, `EnemyPlayerArray`.
+
+##### 3.2.1.9 UI elements in WBP hierarchy
+
+When adding UI elements to the hierarchy in Widget Blueprints, they should be named with a short prefix to identify the type and then a meaningful name.
+
+| Asset Type              | Prefix     |
+| ----------------------- | ---------- |
+| Button                  | Btn_       |
+| Text                    | Txt_       |
+| Image                   | Img_       |
 
 
 <a name="3.2.2"></a>
