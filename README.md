@@ -892,6 +892,8 @@ Arrays follow the same naming rules as above, but should be named as a plural no
 
 Example: Use `Targets`, `Hats`, and `EnemyPlayers`, **not** `TargetList`, `HatArray`, `EnemyPlayerArray`.
 
+<a name="3.2.1.9"></a>
+<a name="bp-vars-ui"></a>
 ##### 3.2.1.9 UI elements in WBP hierarchy
 
 When adding UI elements to the hierarchy in Widget Blueprints, they should be named with a short prefix to identify the type and then a meaningful name.
