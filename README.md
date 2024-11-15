@@ -474,6 +474,7 @@ Packing 4 channels of data into a texture (RGBA) is not recommended except for a
 | Slate Widget Style      | Style_     |            |                                  |
 | Widget Blueprint        | WBP_       |            |                                  |
 | HUD                     | HUD_       |            | Blueprint class derived from HUD parent class. |
+| ViewModel               | VM_        |            |                                  |
 
 <a name="anc-effects"></a>
 <a name="1.2.12"></a>
